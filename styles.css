@@ -1,9 +1,28 @@
-.container{
-    display: flex;
-      /* flex-wrap: nowrap; will prevent items from wrapping
-          align-items: stretch; */  
-      flex: 1fr;
+
+ 
+ 
+  #container {
+      display: grid;
+      grid-gap: 2px;
+
   }
-  .container > div:hover {
-      background-color: black; 
+
+  .gridRows {
+    border: 1px solid grey;
+    min-width: 10px;
+    min-height: 10px;
+    display: grid;
+    margin: auto;
+    padding: 1em;
   }
+  
+  .gridColumns {
+    border: 1px solid grey;
+    min-width: 10px;
+    min-height: 10px;
+    display: grid;
+    margin: auto;
+    padding: 1em;
+  }
+
+  /* display: inline-block */
