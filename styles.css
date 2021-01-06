@@ -4,7 +4,7 @@
    --gridColumn: 1;
  }
 
-h1, h3, h4, .form {
+h1, h3, h4 {
   text-align: center;
   font-family: monospace;
 }
@@ -12,6 +12,18 @@ h1, h3, h4, .form {
 h4{
   margin: 8px;
   padding-bottom: 15px;
+}
+
+#resetbtn{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.button {
+  background-color:#ebfffd;
+  font-family: monospace;
+  padding: 5px;
 }
 
 #container {
@@ -40,24 +52,8 @@ h4{
   transition: 0s;
 }
 
-.form {
-  display: grid;
-  max-width: 200px;
-  margin: auto;
-}
-
-#height {
-  margin: 5px;
-}
-
-#width {
-  margin-bottom: 2px;
-}
-
-#submit {
+#reset {
   font-family: monospace;
-  margin: auto; 
-  margin-bottom: 5px;;
-  max-width: fit-content;
-  text-align: center;
+  margin: auto;
+  justify-content: center;
 }
