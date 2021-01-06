@@ -8,8 +8,16 @@
 </head>
 <body>
     <h1>Etch-a-Sketch</h1>
-    <h3>Move the cursor across the grid. <br>Change the grid size by clicking the "Dimensions" button.</h3>
+    <h3>Move the cursor across the grid. <br>
+        You can change the grid size using the field below.*
+    </h3>
+    <form id="form" class="form" onsubmit="makeGrid()">
+        New dimensions (squared): <input type="number" id="dimensions"> <br>
+        <input type="submit" value="Submit" name="submit" id="submit">
+    </form>
+    <h4>*The maximum grid size is 80 x 80.</h4>
     <div id="container"></div> 
     <script type="text/javascript" src="main.js"></script> 
 </body>
 </html>
+

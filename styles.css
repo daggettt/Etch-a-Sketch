@@ -1,15 +1,64 @@
 
+ :root {
+   --gridRow: 1;
+   --gridColumn: 1;
+ }
  
- 
-  #container {
-      display: grid;
-      background-color: grey;   
-  }
+h1, h3, h4, .form {
+  text-align: center;
+  font-family: monospace;
+}
 
+h4{
+  margin: 5px;
+  padding-bottom: 15px;
+}
+
+#submit {
+  font-family: monospace;
+  margin: 5px;
+}
+
+ #container {
+   display: grid;
+   margin: auto;
+   width:fit-content;
+   grid-gap: 2px;
+   grid-template-columns: repeat(var(--gridColumn), 1fr);
+   grid-template-rows: repeat(var(--gridRow), 1fr);
+   
+ }
+ 
+.gridCells {
+  border: 1px solid black;
+  padding: 0px;
+  text-align: center;
+  justify-items: center;
+  min-width: 15px;
+  min-height: 15px;
+}
+
+
+ /* #container {
+    display: flex;
+    align-items: center;
+    background-color: grey;  
+    flex-direction: column; 
+    justify-content: space-between;
+  }
+  .gridRows {
+    height: 20px;
+    width: 50%;
+  } 
   .gridColumns {
     border: 1px solid black;
-    min-width: 10px;
-    min-height: 10px;
+    min-width: 20px;
+    min-height: 20px;
     display: inline-block;
-    margin-right: 6px;
   }
+
+  .gridColumns:hover {
+    background-color: indigo;
+  }
+
+
